@@ -1,3 +1,71 @@
-:root {
-    --b3-theme-primary: #d23f31;
+#toolbar,
+.dock,
+.status {
+    background-color: #ffffff60;
+}
+
+.dock__item,
+.toolbar__item {
+    color: var(--b3-theme-on-background);
+    border-radius: 4px;
+}
+
+
+
+.toolbar {
+    border-bottom: 1px solid transparent;
+}
+
+.dock#dockRight,
+.dock#dockLeft {
+    border-color: transparent;
+}
+
+#barWorkspace {
+    border: 1px solid var(--b3-theme-primary);
+    border-radius: 4px;
+    background-color: var(--b3-theme-primary);
+    color: white;
+    margin: 4px 0;
+    padding: 4px 8px;
+}
+
+.toolbar__item:not(.toolbar__item--disabled):not(.toolbar__item--close):hover,
+.toolbar__item--active,
+.dock__item:hover,
+.dock__item--active {
+    background-color: rgba(255, 255, 255, .75);
+}
+
+#layouts > .fn__flex.fn__flex-1 {
+    border-color: transparent;
+    border-radius: 12px;
+}
+
+#layouts {
+    background-color: #ffffff60;
+}
+
+.b3-dialog__body .b3-tab-bar.b3-list.b3-list--background {
+    background-color: #ffffffdd;
+}
+
+.b3-dialog__body {
+    border-radius: 12px;
+}
+
+.config__panel>.b3-tab-bar {
+    padding: 18px 8px;
+}
+
+body.body--blur .layout__tab--active .graph__svg,
+body.body--blur .layout__tab--active .inbox__list,
+.layout-tab-container,
+.layout__tab--active .graph__svg,
+.layout__tab--active .inbox__list,
+.graph__svg,
+.inbox__list,
+.protyle,
+.graph {
+    background-color: #ffffffee;
 }
